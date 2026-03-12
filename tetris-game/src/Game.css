@@ -1,0 +1,163 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  padding: 20px;
+}
+
+.game-wrapper {
+  display: flex;
+  gap: 40px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.game-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tetris-canvas {
+  border: 3px solid #fff;
+  background-color: #000;
+  display: block;
+  image-rendering: pixelated;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-width: 200px;
+}
+
+.game-info h1 {
+  font-size: 2.5em;
+  color: #00F0F0;
+  margin: 0;
+  text-shadow: 0 0 10px #00F0F0;
+}
+
+.score {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#score-value {
+  color: #00F0F0;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu button {
+  padding: 12px 30px;
+  font-size: 1em;
+  background-color: #00F0F0;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.menu button:hover {
+  background-color: #00F8FF;
+  box-shadow: 0 0 10px #00F0F0;
+  transform: scale(1.05);
+}
+
+.menu button:active {
+  transform: scale(0.95);
+}
+
+.controls, .controls-active {
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.controls p {
+  margin: 5px 0;
+}
+
+.controls-active {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.controls-active button {
+  padding: 8px 20px;
+  font-size: 0.9em;
+  background-color: #F0A000;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.controls-active button:hover {
+  background-color: #F0B000;
+  box-shadow: 0 0 10px #F0A000;
+}
+
+.controls-active button:active {
+  transform: scale(0.95);
+}
+
+.game-over-message {
+  color: #FF0000;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 0 0 10px #FF0000;
+  animation: blink 0.5s infinite;
+}
+
+.pause-message {
+  color: #F0A000;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: 0 0 10px #F0A000;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .game-info {
+    min-width: auto;
+  }
+
+  #tetris-canvas {
+    max-width: 100%;
+    height: auto;
+  }
+}

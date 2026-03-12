@@ -1,0 +1,24 @@
+{
+  "name": "tetris-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.68",
+    "@vitejs/plugin-react": "^6.0.0",
+    "playwright": "^1.59.0-alpha-1771104257000",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vite": "^8.0.0"
+  }
+}

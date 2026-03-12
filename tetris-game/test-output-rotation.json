@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-03-12T20:22:45.889Z",
+  "tests": [
+    {
+      "name": "Initial piece exists",
+      "passed": true
+    },
+    {
+      "name": "W key rotation works",
+      "passed": true,
+      "details": "Type: Z"
+    },
+    {
+      "name": "ArrowUp key rotation works",
+      "passed": true
+    },
+    {
+      "name": "Multiple rotations",
+      "passed": true,
+      "details": "Rotations: 3"
+    },
+    {
+      "name": "Wall kick collision handling",
+      "passed": true,
+      "details": "Piece x: 8 → 7"
+    },
+    {
+      "name": "Rotation during gameplay",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "01-before-rotation.png",
+    "02-after-w-rotation.png",
+    "03-after-arrow-rotation.png",
+    "04-wall-kick.png",
+    "05-gameplay-with-rotation.png"
+  ]
+}
